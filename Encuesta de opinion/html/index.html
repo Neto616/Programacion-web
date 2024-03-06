@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="personales">
+        <table border="5px">
+            <thead>
+                <tr>
+                    <th colspan="2"><center>Libro</center></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><center>Hoja1</center></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><label for="nombre"><b>Nombre:</b></label></td>
+                    <td><input type="text" id="nombre"></td>
+                </tr>
+                <tr>    
+                    <td><label for="correo"><b>Correo:</b></label></td>
+                    <td><input type="email" id="correo"></td>
+                </tr>
+                <tr>    
+                    <td><label for="nacimiento"><b>Fecha de nacimiento: </b></label></td>
+                    <td><input type="date" id="nacimiento"></td>
+                </tr>
+                <tr>    
+                    <td><label for="genero"><b>Genero: </b></label></td>
+                    <td>
+                        <input type="radio" name="genero" id="masculino" value="Masculino">Masculino<br>
+                        <input type="radio" name="genero" id="femenino" value="Femenino">Femenino<br>    
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input id="siguiente" type="button" value="Siguiente">
+    </div>
+
+    <div id="interes" class="desaparecer">
+        <table border="5px">
+            <thead>
+                <tr>
+                    <th colspan="2"><center>Hoja2</center></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><label for="temas"><b>Temas que me interesan: </b></label></td>
+                    <td>
+                        <input type="checkbox" name="temas" id="check1" value="Bases de datos"/> Bases de datos <br>
+                        <input type="checkbox" name="temas" id="check2" value="Lenguajes de programación"/> Lenguajes de prorgamación <br>
+                        <input type="checkbox" name="temas" id="check3" value="Office"/> Office <br>
+                        <input type="checkbox" name="temas" id="check4" value="ITSM"/> ITSML <br>
+                        <input type="checkbox" name="temas" id="check5" value="Cómputo móvil"/> Cómputo móvil <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="horario"><b>Horario que prefiero:</b></label></td>
+                    <td>
+                        <select id="horario">
+                            <option value="" selected>Escoge una opcion...</option>
+                            <option value="Horario 1">Horario 1</option>
+                            <option value="Horario 2">Horario 2</option>
+                            <option value="Horario 3">Horario 3</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for=""><b>¿Por qué medio te gustaría saber de nosotros?</b></label></td>
+                    <td>
+                        <input type="checkbox" name="medios" id="checkCorreo" value="Correo"> Correo <br>
+                        <input type="checkbox" name="medios" id="checkFb" value="Facebook"> Facebook <br>
+                        <input type="checkbox" name="medios" id="checkTel" value="Teléfono"> Teléfono <br>
+                        <input type="checkbox" name="medios" id="checkX" value="Twitter"> Twitter <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input id="atras" type="button" value="Atras">
+        <input id="siguiente2" type="button" value="Siguiente">
+    </div>
+
+    <div id="opinion" class="desaparecer">
+        <table border="5px">    
+            <thead>
+                <th colspan="2"><center>Hoja3</center></th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="2"><input type="checkbox" id="asistido">¿Ha asistido a cursos de Aprenda alguna vez?</td>
+                </tr>
+
+                <tr>
+                    <td><label for="nCursos"><b>¿A cuántos cursos ha asistido en los últimos 2 años?</b></label></td>
+                    <td><input type="number" id="nCursos"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="comentario"><b>Regálanos algún comentario del curso:</b></label></td>
+                </tr>
+
+                <tr>
+                    <td><textarea id="comentario" cols="30" rows="10"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="experiencia"><b>¿Cómo calificarias tu experiencia?</b></label></td>
+                    <td>
+                        <select id="experiencia">
+                            <option value="" selected>Escoge una opción...</option>
+                            <option value="Excelente">Excelente</option>
+                            <option value="Más o menos">Más o menos</option>
+                            <option value="Mal">Mal</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="button" id="atras2" value="Atras">
+        <input type="button" id="enviar" value="Enviar formulario">
+    </div>
+
+    <div id="datos" class="desaparecer">
+        <h1>Datos:</h1>
+        <p id="info"></p>
+    </div>
+</body>
+
+<script src="../js/boton.js"></script>
+</html>
